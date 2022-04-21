@@ -23,7 +23,7 @@ These situations can also be addressed in an easy and reliable way by using a ne
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.youtube.com/watch?v=ix6a1gvEowA" rel="nofollow"><img src="https://user-images.githubusercontent.com/66027832/164478736-303ba920-a4b0-41a5-bdd4-acb45536a9fd.JPG" alt="FortiSIEM remediation using External Connectors" data-canonical-src="https://user-images.githubusercontent.com/66027832/164478736-303ba920-a4b0-41a5-bdd4-acb45536a9fd.JPG" style="max-width: 100%;"></a></td>
+<td><a href="https://www.youtube.com/watch?v=ix6a1gvEowA" rel="nofollow"><img src="https://user-images.githubusercontent.com/66027832/164478736-303ba920-a4b0-41a5-bdd4-acb45536a9fd.JPG" alt="FortiSIEM remediation using External Connectors" data-canonical-src="ttps://img.youtube.com/vi/ix6a1gvEowA/0.jpg" style="max-width: 100%;"></a></td>
 </tr>
  <tr>
 <td><a href="https://www.youtube.com/watch?v=ix6a1gvEowA" rel="nofollow">Video Presentation & Demo</a></td>   
