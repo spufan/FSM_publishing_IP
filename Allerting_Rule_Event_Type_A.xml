@@ -1,0 +1,30 @@
+<rules><DataRequest active="true" advanced="true" custId="1" dataCreationType="USER" dbId="1110203" debug="false" entityVersion="157" fireInternalIncident="false" functionCategory="Security" id="1110203" naturalId="PH_SYS_Rule_1648928689685__DUP_1_1649286875216" phIncidentCategory="Internal" subFunction="PH_RULE_SECURITY_COMMAND_AND_CONTROL" technique="T1046,T1595.001,T1595.002" type="Rule">
+<Name>Attack Type A</Name>
+<Description/>
+<Remediation/>
+<CustomerScope groupByEachCustomer="true">
+<Include all="true"/>
+<Exclude/>
+</CustomerScope>
+<PatternClause window="120">
+<SubPattern id="1110253" name="Filter_1">
+<SingleEvtConstr>eventType = "Event Type A"  AND  hashMD5 IS NOT NULL  AND  uriStem IS NOT NULL</SingleEvtConstr>
+<GroupEvtConstr>COUNT(*) &gt;= 1</GroupEvtConstr>
+<GroupByAttr>hashMD5,destIpAddr,uriStem,srcIpAddr</GroupByAttr>
+</SubPattern>
+</PatternClause>
+<IncidentDef eventType="Rule_detect_attack_A" eventTypeGroup="PH_SYS_EVENT_PH_RULE_SEC" fireFreq="900" severity="10">
+<ArgList>srcIpAddr=Filter_1.srcIpAddr,destIpAddr=Filter_1.destIpAddr,incidentTarget=Filter_1.destIpAddr,hashMD5=Filter_1.hashMD5,uriStem=Filter_1.uriStem</ArgList>
+</IncidentDef>
+<DynWatchListDef attr="srcIpAddr">
+<WatchList>Watch_Lists_Test_Watch_List_1</WatchList>
+</DynWatchListDef>
+<userRoles>
+<roles custId="1">940501</roles>
+</userRoles>
+<TriggerEventDisplay>
+<AttrList>*,rawEventMsg,srcIpAddr,eventName,eventSeverity,destIpAddr,targetDomain,hashMD5,uriStem</AttrList>
+</TriggerEventDisplay>
+<IncidentTitle>Test Attack Src $srcIpAddr Dst $destIpAddr </IncidentTitle>
+</DataRequest>
+</rules>

@@ -1,0 +1,8 @@
+<eventFormatRecognizer><![CDATA[TestEvent_A Source_IP=]]></eventFormatRecognizer>
+<parsingInstructions>
+<setEventAttribute attr="eventSeverity">10</setEventAttribute>
+<setEventAttribute attr="eventType">Event Type A</setEventAttribute>
+<collectFieldsByRegex src="$_rawmsg">
+<regex><![CDATA[TestEvent_A Source_IP=<srcIpAddr:gPatIpV4Dot> Test Attack Type A Destination_IP=<destIpAddr:gPatIpV4Dot> accessing website <uriStem:gPatStr> downloading <hashMD5:gPatStr>]]></regex>
+</collectFieldsByRegex>
+</parsingInstructions>

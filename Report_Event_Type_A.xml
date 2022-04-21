@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><Reports><Report baseline="" id="PH_SYS_Report_1650203298971" rsSync=""><Name>Report_Event_Type_A</Name><Description>Report_Event_Type_A - 04:48:18 PM Apr 17 2022</Description><CustomerScope groupByEachCustomer="true">
+<Include>1</Include>
+<Exclude/>
+</CustomerScope><PatternClause>
+<SubPattern id="1139153" name="">
+<SingleEvtConstr>eventType = "Event Type A"</SingleEvtConstr>
+<GroupByAttr>eventType,eventName,srcIpAddr,destIpAddr</GroupByAttr>
+</SubPattern>
+</PatternClause><SelectClause>
+<AttrList>eventType,eventName,srcIpAddr,destIpAddr,COUNT(*)</AttrList>
+</SelectClause><userRoles>
+<roles custId="1">940501</roles>
+</userRoles><SyncOrgs/><ReportInterval>
+<Low>1650199713</Low>
+<High>1650203312</High>
+</ReportInterval><TrendInterval>auto</TrendInterval><TimeZone/></Report></Reports>
