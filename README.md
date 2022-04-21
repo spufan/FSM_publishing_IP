@@ -32,7 +32,7 @@ These situations can also be addressed in an easy and reliable way by using a ne
 </table>
 </p>  
 
-<h1>Main advantages of this method:</h1>  
+<h1>Main advantages of this method</h1>  
 <table>
 <thead>
 </thead>
