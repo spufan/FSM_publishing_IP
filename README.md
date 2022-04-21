@@ -32,54 +32,40 @@ These situations can also be addressed in an easy and reliable way by using a ne
 </table>
 </p>  
 
-  
-   <p> 
+<h1>Main advantages of this method:</h1>  
+<table>
+<thead>
+</thead>
+<tbody>
+<p>
+    •	One single publishing script can be used to integrate multiple and different FGT FOS versions and/or 3rd party firewall devices
+</p>
+<p>  
+  •	Sources and/or Destinations IP address can be extracted from FortiSIEM Incident XML file and published in a HTML/txt file format in order to be easily fetched by Firewalls and used in specific policy rules
+</p>
+  <p>
+  •	In case of a firewall firmware upgrade or configuration change, there is no need to update the FortiSIEM script  
+</p>
+  <p>
+  •	Less computing resources needed, as there is no need to initiate and handle SSH sessions with each specific FortiGate or 3rd party Firewall
+<p>
+  <tp>
+  •	Fast and easy deployment within Fortinet environment by copying the script on FortiSIEM Supervisor and using FortiManager to configure FortiGate Security Fabric External Connectors
+<p>
+  <p> 
+  •	Sources or Destinations IP address can be fetched from FortiSIEM incidents and used by Firewalls to enforce different policy rules (with block or allow actions)
+<p>
+  <p>
+  •	This method might be extended to use Hash and URL lists (not just IP address lists)
+</p>
+</tbody>
+</table> 
+</p>  
 
- </p>  
-
-  
-  
-   <p> 
-
- </p>  
-
-  
-  
-   <p> 
-
- </p>  
-
-  
-  
-   <p> 
-
- </p>  
-
-  
-  
-   <p> 
-
- </p>  
-
-  
-  
-   <p> 
-
- </p>  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </body>
+    
+  <h1>Implementation & Testing</h1> 
+<p>
+   Details regarding implementation and testing procedures are available on this <a href="https://fusecommunity.fortinet.com/blogs/silviu/2022/04/12/fortisiempublishingscript"> Blog Article </a>  	 </p>
+ </body>
 </html>
 
